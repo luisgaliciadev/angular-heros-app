@@ -1,0 +1,44 @@
+<div class="mt-10" fxLayoutAlign="center" *ngIf="superHero">
+  <mat-card
+    fxLayout="column"
+    fxLayoutGab="40px"
+    fxFlex="40"
+    fxFlex.lg="50"
+    fxFlex.md="60"
+    fxFlex.sm="80"
+    fxFlex.xs="100"
+  >
+    <mat-card-header>
+      <mat-card-title>
+        Super Héroe <small>{{ superHero.name }}</small>
+      </mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content fxLayoutGab="40px">
+      <div fxFlex="50" fxLayout="column">
+        <img class="img-super-heroe" [style]="superHero.img | imageHero" />
+      </div>
+      <div fxFlex="50" class="pl-20">
+        <div><strong>Nombre: </strong>{{ superHero.name }}</div>
+        <div class="mt-10">
+          <strong>Compañia: </strong>{{ superHero.company }}
+        </div>
+        <div class="mt-10">
+          <strong>Información: </strong>
+          <p>{{ superHero.info }}</p>
+        </div>
+      </div>
+    </mat-card-content>
+
+    <mat-card-footer fxLayout="column">
+      <button
+        class="mt-5"
+        mat-raised-button
+        color="basic"
+        routerLink="/super-heros/list"
+      >
+        {{ "Volver" }}
+      </button>
+    </mat-card-footer>
+  </mat-card>
+</div>

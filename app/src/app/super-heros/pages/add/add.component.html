@@ -1,0 +1,85 @@
+<div class="mt-10" fxLayoutAlign="center" *ngIf="edit">
+  <mat-card
+    fxLayout="column"
+    fxLayoutGab="40px"
+    fxFlex="45"
+    fxFlex.xl="45"
+    fxFlex.lg="50"
+    fxFlex.md="60"
+    fxFlex.sm="80"
+    fxFlex.xs="100"
+  >
+    <mat-card-header>
+      <mat-card-title>
+        {{ superHero.id ? "Editar" : "Añadir" }}
+        Super Héroe <small>{{ superHero.name }}</small>
+      </mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <div fxFlex="50" fxLayout="column" [formGroup]="form">
+        <mat-form-field fxFlex="100">
+          <mat-label>Nombre</mat-label>
+          <input
+            matInput
+            appTitleCase
+            type="text"
+            formControlName="name"
+            required
+          />
+          <mat-error *ngIf="form.hasError('required', 'name')">
+            El nombre es <strong>obligarotio</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field fxFlex="100">
+          <mat-label>Compañia</mat-label>
+          <mat-select formControlName="company" required>
+            <mat-option
+              *ngFor="let compania of companias"
+              [value]="compania.id"
+              >{{ compania.text }}</mat-option
+            >
+          </mat-select>
+          <mat-error *ngIf="form.hasError('required', 'company')">
+            La compañia es <strong>obligarotia</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field fxFlex="100">
+          <mat-label>Información</mat-label>
+          <input matInput type="text" formControlName="info" required />
+          <mat-error *ngIf="form.hasError('required', 'info')">
+            La información es <strong>obligarotia</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field fxFlex="100">
+          <mat-label>La Url de la foto</mat-label>
+          <input matInput type="url" formControlName="img" required />
+          <mat-error *ngIf="form.hasError('required', 'img')">
+            La url de la foto es <strong>obligarotia</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div fxFlex="50" class="pl-20">
+        <img class="img-super-heroe" [style]="superHero.img | imageHero" />
+      </div>
+    </mat-card-content>
+
+    <mat-card-footer fxLayout="column">
+      <button mat-raised-button color="primary" (click)="guardar()">
+        <mat-icon>{{ superHero.id ? "edit" : "add" }}</mat-icon>
+        {{ superHero.id ? "Editar" : "Añadir" }}
+      </button>
+      <button
+        class="mt-5"
+        mat-raised-button
+        color="basic"
+        routerLink="/super-heros/list"
+      >
+        {{ "Volver" }}
+      </button>
+    </mat-card-footer>
+  </mat-card>
+</div>

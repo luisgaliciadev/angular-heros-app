@@ -1,0 +1,102 @@
+{
+  "super-heroes": [
+    {
+      "name": "Deadpool",
+      "company": "Marvel",
+      "info": "Es el mejor de todos",
+      "img": "https://cronicaglobal.elespanol.com/uploads/s1/25/60/75/4/deadpool.jpeg",
+      "id": 1
+    },
+    {
+      "name": "Wolverine",
+      "company": "Marvel",
+      "info": "El garras",
+      "img": "https://www.tonica.la/__export/1589127316374/sites/debate/img/2020/05/10/wolverine-portada.jpg_1902800913.jpg",
+      "id": 2
+    },
+    {
+      "name": "Spiderman",
+      "company": "Marvel",
+      "info": "El hombre araña",
+      "img": "https://assets.entrepreneur.com/content/3x2/2000/20190927183318-Spiderman.jpeg",
+      "id": 3
+    },
+    {
+      "name": "Superman",
+      "company": "DC",
+      "info": "El hombre se acero",
+      "img": "https://www.tonica.la/__export/1593024462954/sites/debate/img/2020/06/24/henry-cavill-superman-portada_1.jpg_463833556.jpg",
+      "id": 4
+    },
+    {
+      "name": "Batman",
+      "company": "DC",
+      "info": "Soy batman",
+      "img": "https://www.nacionflix.com/__export/1595193663417/sites/debate/img/2020/07/19/batman_revelan_pxster_de_la_pelxcula_de_ben_affleck_para_hbo_max.jpg_172596871.jpg",
+      "id": 5
+    },
+    {
+      "name": "Bruja escarlata",
+      "company": "Marvel",
+      "info": "La mas poderosa",
+      "img": "https://cineverso.es/wp-content/uploads/2021/03/scarlet-witch-wandavision-bruja-escarlata-y-vision-750x375.png",
+      "id": 6
+    },
+    {
+      "name": "Doctor strange",
+      "company": "Marvel",
+      "info": "El mago",
+      "img": "https://img.ecartelera.com/noticias/fotos/57700/57719/1.jpg",
+      "id": 7
+    },
+    {
+      "name": "Mujer maravilla",
+      "company": "DC",
+      "info": "La amazonas",
+      "img": "https://i2.wp.com/www.micropsiacine.com/wp-content/uploads/2017/07/wonder-woman.jpg?fit=940%2C627&ssl=1",
+      "id": 8
+    },
+    {
+      "name": "Flash",
+      "company": "DC",
+      "info": "El mas rápido del mundo",
+      "img": "https://dam.smashmexico.com.mx/wp-content/uploads/2018/06/01104752/dc-flash-segundo-traje-justice-league-conformacion-zack-snyder-cover-ok.jpg",
+      "id": 9
+    },
+    {
+      "name": "Aquaman",
+      "company": "DC",
+      "info": "El rey de los mares",
+      "img": "https://www.cinemascomics.com/wp-content/uploads/2020/01/aquaman-hbo-max.jpg.webp",
+      "id": 10
+    },
+    {
+      "name": "Capitan america",
+      "company": "Marvel",
+      "info": "El capi",
+      "img": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2020/06/capitan-america-1969111.jpg?itok=_j-ctAvE",
+      "id": 11
+    },
+    {
+      "name": "Iron man",
+      "company": "Marvel",
+      "info": "El dios entre los mortales",
+      "img": "https://cdn.britannica.com/49/182849-050-4C7FE34F/scene-Iron-Man.jpg",
+      "id": 12
+    },
+    {
+      "name": "Thor",
+      "company": "Marvel",
+      "info": "El dios del trueno",
+      "img": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/rybwlovpgevrgd4bulel.jpg",
+      "id": 13
+    },
+    {
+      "name": "Loki",
+      "company": "Marvel",
+      "info": "EL dios del engaño",
+      "img": "https://as.com/epik/imagenes/2019/06/10/portada/1560175537_078397_1560175752_noticia_normal.jpg",
+      "id": 14
+    }
+  ]
+}

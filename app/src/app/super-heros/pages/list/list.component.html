@@ -1,0 +1,57 @@
+<div fxLayout="column" class="mt-10">
+  <div>
+    <h2>Listado de Super Héroes</h2>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="center" fxLayout.xs="column">
+    <div fxFlex="70">
+      <mat-form-field fxLayout="column">
+        <input
+          #inputSearch
+          type="text"
+          placeholder="Buscar Super Héroe"
+          aria-label="Buscar Super Héroe"
+          matInput
+        />
+      </mat-form-field>
+    </div>
+    <div>
+      <button mat-raised-button color="primary" routerLink="/super-heros/add">
+        <mat-icon>add</mat-icon> Añadir
+      </button>
+    </div>
+  </div>
+</div>
+
+<br />
+
+<div
+  class="mb-40"
+  fxLayout="row wrap"
+  fxLayout.xs="column"
+  fxLayoutAlign="center"
+  fxLayoutGap="20px"
+>
+  <div
+    fxFlex="30"
+    fxFlex.xl="20"
+    fxFlex.lg="20"
+    fxFlex.md="30"
+    fxFlex.sm="40"
+    *ngFor="let superHero of superHeros"
+  >
+    <app-super-hero-card [superHero]="superHero"></app-super-hero-card>
+  </div>
+
+  <div
+    fxFlex="100"
+    fxLayout="row"
+    fxLayoutAlign="center"
+    fxLayoutGap="40px"
+    class="mt-40"
+    *ngIf="pages"
+  >
+    <button mat-raised-button color="primary" (click)="getSuperHeros(false)">
+      <mat-icon>add</mat-icon> Cargar mas Super Héroes...
+    </button>
+  </div>
+</div>

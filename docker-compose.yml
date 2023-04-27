@@ -1,0 +1,12 @@
+# @format
+
+version: "3"
+services:
+  app.web:
+    env_file: .env
+    build:
+      context: .
+      args:
+        env: ${ENVIROMENT}
+    ports:
+      - ${FRONT_PORT}:80
