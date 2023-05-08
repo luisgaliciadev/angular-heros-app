@@ -4,7 +4,7 @@
 
 Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
 
-[Angular heros-app](https://github.com/eliesser/angular-super-heroes) es una aplicación en angular configuranda con [docker](https://www.docker.io) usando como api mockup la librería [JSON Server](https://www.npmjs.com/package/json-server).
+[Angular heros-app](https://github.com/luisgaliciadev/angular-heros-app.git) es una aplicación en angular configuranda con [docker](https://www.docker.io) usando como api mockup la librería [JSON Server](https://www.npmjs.com/package/json-server).
 
 ## Prueba técnica frontend
 
