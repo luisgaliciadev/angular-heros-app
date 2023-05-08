@@ -39,7 +39,7 @@ Puntos opcionales de mejora:
 ## 1.- Clonar el repositorio
 
 ```bash
-$ git clone https://github.com/eliesser/angular-super-heroes.git
+$ git clone https://github.com/luisgaliciadev/angular-heros-app.git
 ```
 
 Posteriormente moverse al la carpeta con esta instrucción:
